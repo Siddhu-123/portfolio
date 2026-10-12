@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Satya Siddhartha Balanagu — Portfolio & Technical Dossier
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[**Live site**](https://siddhu-123.github.io/portfolio/)
 
-## Available Scripts
+Vite + React + Tailwind portfolio built from `../Master_Project_and_Skills_Inventory/` (23 projects, 15 skill domains, 6 focus profiles; see the [dossier](https://siddhu-123.github.io/project-inventory/)). Styled after the Pixo design language (hard shadows, stroked wordmark, day/night theme, star cursor).
 
-In the project directory, you can run:
+## Run locally
 
-### `npm start`
+```bash
+npm install
+npm run dev
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open http://localhost:5173/portfolio/ (Vite `base` is `/portfolio/` for GitHub Pages).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Build
 
-### `npm test`
+```bash
+npm run build
+npm run preview
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Deploy to GitHub Pages
 
-### `npm run build`
+Pushing to `main` runs `.github/workflows/pages.yml`, which builds with Vite and publishes `dist/` through GitHub Pages (Settings, Pages, Source: GitHub Actions).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`base: '/portfolio/'` in `vite.config.js` makes assets resolve under `https://<user>.github.io/portfolio/`. If you rename the repository, update that value and `homepage` in `package.json`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Content notes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `src/data/projects.js` — 23 projects with category, status, metrics, resume bullets and public links; categories and counts are derived from this file.
+- `src/data/dossier.js` — coursework, 15 skill domains, experience, 6 focus profiles.
+- Private `file://` evidence paths from the LaTeX dossier are intentionally omitted; public URLs kept (WhatsApp live, GitHub, Chrome Store, Behance).
+- Status labels keep claims accurate: patent-style draft (not granted), SA Water research-only, SMARTGUARD concept, no clinical deployment claims.
+- `_quarantine/` holds pre-rebuild strays (`.pth`, training JSON, WhatsApp jpeg, old `wiggle`/`lethimcook` experiments) and is git-ignored.
 
-### `npm run eject`
+## Licence
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Site code is MIT (see [LICENSE](LICENSE)). Project descriptions and media describe the author's own work.
