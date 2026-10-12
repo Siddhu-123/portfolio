@@ -22,12 +22,14 @@ export const projects = [
       'The Chrome Web Store publishing process and Xcode code-signing for on-device builds.',
     ],
     media: media('detpass'),
+    repo: 'https://github.com/Siddhu-123/detpass',
     liveUrl: 'https://chromewebstore.google.com/detail/secret-password-generator/mfgnlfigpdcgfmndaljciagcgjiicnal',
     links: [
       {
         label: 'Chrome Store',
         url: 'https://chromewebstore.google.com/detail/secret-password-generator/mfgnlfigpdcgfmndaljciagcgjiicnal',
       },
+      { label: 'GitHub', url: 'https://github.com/Siddhu-123/detpass' },
     ],
   },
   {
@@ -50,7 +52,8 @@ export const projects = [
       'Writing hermetic tests by injecting clocks and processes, plus end-to-end tests for each permission mode.',
       'Validating inputs at enqueue time so bad jobs fail fast instead of midway through a run.',
     ],
-    links: [],
+    repo: 'https://github.com/Siddhu-123/agent-hub-app',
+    links: [{ label: 'GitHub', url: 'https://github.com/Siddhu-123/agent-hub-app' }],
   },
   {
     id: 'clicky-mac',
@@ -72,7 +75,8 @@ export const projects = [
       'Quantisation trade-offs between speed, memory and accuracy on Apple Silicon.',
       'Working with macOS privacy permissions (screen recording, accessibility) by packaging the tool as an app bundle.',
     ],
-    links: [],
+    repo: 'https://github.com/Siddhu-123/clicky-mac',
+    links: [{ label: 'GitHub', url: 'https://github.com/Siddhu-123/clicky-mac' }],
   },
   {
     id: 'lightroom-web',
@@ -116,7 +120,8 @@ export const projects = [
       'Driving an audio visualiser from system output without requesting microphone access.',
     ],
     media: media('notch'),
-    links: [],
+    repo: 'https://github.com/Siddhu-123/notch',
+    links: [{ label: 'GitHub', url: 'https://github.com/Siddhu-123/notch' }],
   },
   {
     id: 'techtopia',
